@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- /src/mapper/mybatis-config.xml  /xml문서 저장방식 두번째줄에 주석..-->
+<!-- !DOCTYPE : xml 문서 작성규칙을 지정한 파일을 지정  / dtd문서가 국제 표준이면 =PUBLIC-->
+<!DOCTYPE configuration PUBLIC "-//mybatis.org/DTD config 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	<properties resource="model/mapper/mybatis.properties" />
+	<typeAliases>
+		<typeAlias type="model.Member" alias="Member" />
+		<typeAlias type="model.Board" alias="Board" />
+	</typeAliases>
+	<!--  db connection 설정 -->
+	<environments default = "development" >
+		<environment id="development">
+		 <transactionManager type="JDBC" />
+		 <dataSource type="POOLED">
+			<property name="driver" value="${jdbc.driver}" />
+			<property name="url" value="${jdbc.url}" />
+			<property name="username" value="${jdbc.username}" />
+			<property name="password" value="${jdbc.password}" />	
+		</dataSource>
+		</environment>
+	</environments>
+<!-- 사용할 sql 구문을 저장한 xml을 설정 -->	
+	<mappers>
+	<package name="model.mapper"/>
+	</mappers>
+</configuration>
+

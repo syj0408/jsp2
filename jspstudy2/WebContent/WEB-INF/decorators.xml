@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<decorators defaultdir="/decorator">
+	<decorator name="main" page="decorator2.jsp">
+		<pattern>/model2/member/*</pattern>
+	</decorator>
+	<decorator name="main" page="decorator3.jsp">
+		<pattern>/model2/board/*</pattern>
+	</decorator>
+	<excludes>
+		<pattern>/model2/member/picture*</pattern> <!-- stiemesh레이아웃에서 제외시킴 -->
+		<pattern>/model2/member/upload*</pattern>
+		<pattern>/model2/member/id*</pattern>
+		<pattern>/model2/member/pw*</pattern>
+		<pattern>/model2/ajax/*</pattern>
+	</excludes>
+</decorators>

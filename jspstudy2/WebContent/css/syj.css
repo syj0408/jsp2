@@ -1,0 +1,89 @@
+/* WebContent/css/syj.css */
+
+* { 
+
+/* Basic CSS reset */
+
+margin:0; 
+
+padding:0;
+
+}
+
+body {
+
+/* These styles have nothing to do with the ribbon */
+
+background:#EEE;
+
+padding:3px 0 0;
+
+margin:auto;
+
+text-align:center;
+
+}
+
+table#main{
+
+margin : auto;
+
+   width : 90%;
+
+   border-radius: 10px;
+
+}
+
+table#list{
+
+margin : auto;
+
+width :90%;
+
+border-radius: 10px;
+
+}
+
+th,td {
+
+   border : 3px  #bcbcbc;
+
+   text-align : center;
+
+   padding : 8px;
+
+   border-radius: 10px;
+
+}
+
+th {
+
+   background-color : #061f2f;
+
+   color : #adbacf;
+
+}
+
+td {
+
+   background-color : #F2F2F2;
+
+}
+
+caption {
+
+   color : #4c4c4c;
+
+   font-size : 20px;
+
+   background-color : #cccccc;
+
+   border-radius: 10px;
+
+}
+
+input[type=text], input[type=password],textarea {
+
+   width : 100%;
+
+}

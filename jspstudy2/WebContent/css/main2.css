@@ -1,0 +1,18 @@
+table
+{
+   width:100%;
+   border-collapse: collapse;
+}
+th, td
+{
+   border: 2px solid #eff4ea;
+   text-align: center;
+   padding: 8px;
+}
+th { background-color: #e2efcb; color: #87b48d; }
+td { background-color: #eaf1e2; }
+caption 
+{
+   color: #325036; font-size: 20px;
+   background-color: #a9c9ae;}
+input[type=text], input[type=password], textarea { width: 100%; }
